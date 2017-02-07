@@ -1,0 +1,72 @@
+execve("./testMultipleRead", ["./testMultipleRead", "/dev/lunix1-light"], [/* 39 vars */]) = 0
+brk(0)                                  = 0x224e000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f57e0e6f000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/usr/lib/nx/X11/Xinerama/tls/x86_64/libc.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/nx/X11/Xinerama/tls/x86_64", 0x7fffaf935070) = -1 ENOENT (No such file or directory)
+open("/usr/lib/nx/X11/Xinerama/tls/libc.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/nx/X11/Xinerama/tls", 0x7fffaf935070) = -1 ENOENT (No such file or directory)
+open("/usr/lib/nx/X11/Xinerama/x86_64/libc.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/nx/X11/Xinerama/x86_64", 0x7fffaf935070) = -1 ENOENT (No such file or directory)
+open("/usr/lib/nx/X11/Xinerama/libc.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/nx/X11/Xinerama", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+open("/usr/lib/nx/X11/tls/x86_64/libc.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/nx/X11/tls/x86_64", 0x7fffaf935070) = -1 ENOENT (No such file or directory)
+open("/usr/lib/nx/X11/tls/libc.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/nx/X11/tls", 0x7fffaf935070) = -1 ENOENT (No such file or directory)
+open("/usr/lib/nx/X11/x86_64/libc.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/nx/X11/x86_64", 0x7fffaf935070) = -1 ENOENT (No such file or directory)
+open("/usr/lib/nx/X11/libc.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/nx/X11", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+open("/etc/ld.so.cache", O_RDONLY)      = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=62324, ...}) = 0
+mmap(NULL, 62324, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f57e0e5f000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/libc.so.6", O_RDONLY)        = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\355\1\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1437064, ...}) = 0
+mmap(NULL, 3545160, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f57e08f2000
+mprotect(0x7f57e0a4b000, 2093056, PROT_NONE) = 0
+mmap(0x7f57e0c4a000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x158000) = 0x7f57e0c4a000
+mmap(0x7f57e0c4f000, 18504, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f57e0c4f000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f57e0e5e000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f57e0e5d000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f57e0e5c000
+arch_prctl(ARCH_SET_FS, 0x7f57e0e5d700) = 0
+mprotect(0x7f57e0c4a000, 16384, PROT_READ) = 0
+mprotect(0x7f57e0e71000, 4096, PROT_READ) = 0
+munmap(0x7f57e0e5f000, 62324)           = 0
+open("/dev/lunix1-light", O_RDONLY)     = 3
+clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f57e0e5d9d0) = 17992
+fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 2), ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f57e0e6e000
+read(3, "3", 1)                         = 1
+read(3, "0", 1)                         = 1
+read(3, ".", 1)                         = 1
+read(3, "5", 1)                         = 1
+read(3, "1", 1)                         = 1
+read(3, "8", 1)                         = 1
+read(3, "\n", 1)                        = 1
+write(1, "parent : 30.518\n", 16)       = 16
+read(3, "3", 1)                         = 1
+read(3, "0", 1)                         = 1
+read(3, ".", 1)                         = 1
+read(3, "5", 1)                         = 1
+read(3, "1", 1)                         = 1
+read(3, "8", 1)                         = 1
+read(3, "\n", 1)                        = 1
+write(1, "parent: 30.518\n", 15)        = 15
+read(3, "3", 1)                         = 1
+read(3, "0", 1)                         = 1
+read(3, ".", 1)                         = 1
+read(3, "0", 1)                         = 1
+read(3, "6", 1)                         = 1
+read(3, "0", 1)                         = 1
+read(3, "\n", 1)                        = 1
+write(1, "parent: 30.060\n", 15)        = 15
+read(3, 0x7fffaf93591f, 1)              = ? ERESTARTSYS (To be restarted)
+--- SIGINT (Interrupt) @ 0 (0) ---
++++ killed by SIGINT +++
